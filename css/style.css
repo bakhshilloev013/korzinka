@@ -1,0 +1,445 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid gainsboro;
+}
+.header .headerItems {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .headerItems .headerLeft {
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+.header .headerItems .headerLeft a {
+    padding: 0 15px;
+    color: #000;
+    text-decoration: none;
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+}
+.header .headerItems .headerLeft a .phoneIcon {
+    color: red;
+}
+.header .headerItems .headerLeft a:hover {
+    transition: 0.3s all;
+    color: #ff0000;
+}
+.header .headerItems .headerLeft .headerCall span {
+    font-weight: 500;
+}
+.header .headerItems .headerLeft a:nth-child(2) {
+    border: none;
+}
+.header .headerItems .headerRight {
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+.header .headerItems .headerRight .leftSearch {
+    padding: 0 10px;
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+}
+.header .headerItems .headerRight .leftSearch input {
+    width: 290px;
+    border: none;
+    outline: none;
+}
+.header .headerItems .headerRight .leftSearch button {
+    height: 35px;
+    width: 35px;
+    background-color: #fff;
+    border: none;
+    color: gray;
+}
+.header .headerItems .headerRight .rightLanguage {
+    padding: 0 10px;
+    border-right: 1px solid gainsboro;
+}
+.header .headerItems .headerRight .rightLanguage a {
+    color: #000;
+    text-decoration: none;
+    padding: 0 3px;
+}
+.header .headerItems .headerRight .rightLanguage .active {
+    color: #ff0000;
+    font-weight: 500;
+}
+.menu {
+    height: 75px;
+    width: 100%;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.menu .menuItems {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.menu .menuItems .menuList {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.menu .menuItems .menuList li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+}
+.menu .menuItems .menuList li a:hover {
+    transition: 0.3s all;
+    color: #ff0000;
+}
+.menu .menuItems .menuList li a img {
+    height: auto;
+    width: 200px;
+}
+.carousel {
+    height: 460px;
+    width: 100%;
+    background: url('../img/carousel_bg.jpg') center center/cover no-repeat;
+}
+.carousel .carouselItems {
+    height: 460px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.carousel .carouselItems .carouselBtn {
+    height: 50px;
+    width: 190px;
+    border-radius: 25px;
+    background-color: #fff;
+    border: none;
+}
+.catalog {
+    min-height: 900px;
+    width: 100%;
+    background-color: ghostwhite;
+}
+.catalog .catalogHeader {
+    min-height: 120px;
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.catalog .catalogHeader .leftHeader {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid blue; */
+}
+.catalog .catalogHeader .rightHeader {
+    height: 100%;
+    width: 35%;
+}
+.catalog .catalogCards {
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.catalog .catalogCards .card {
+    height: 700px;
+    width: 347px;
+    background-color: ghostWhite;
+    border: none;
+}
+.catalog .catalogCards .card .cardImg {
+    height: 347px;
+    width: 347px;
+}
+.catalog .catalogCards .card .cardLink {
+    height: auto;
+    width: 100%;
+    padding-right: 30px;
+    transform: translateY(-25px);
+    display: flex;
+    justify-content: end;
+}
+.catalog .catalogCards .card .cardLink .cardRound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: none;
+    background-color: gainsboro;
+}
+.catalog .catalogCards .card .cardLink .cardRound:hover {
+    transition: 0.3s all;
+    background-color: #ff0000;
+    color: #fff;
+}
+.catalog .catalogCards .card .cardDate{
+    font-size: 20px;
+    font-weight: 500;
+    color: gray;
+}
+.catalog .catalogCards .card .cardTitle {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+}
+.catalog .catalogCards .card .cardTitle:hover {
+    transition: 0.3s all;
+    color: red;
+}
+.catalog .catalogCards .card .cardText {
+    margin-top: 15px;
+}
+.catalog .catalogCards .card:last-child .cardText {
+    margin-top: 45px;
+}
+/* Home start */
+
+.news {
+    min-height: 900px;
+    width: 100%;
+    background-color: ghostwhite;
+}
+.news .newsHeader {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.news .newsHeader .leftTitle {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 25px;
+    font-weight: 700;
+    padding-left: 30px;
+    background: url('../img/document.png') left no-repeat;
+}
+.news .newsHeader .rightLink {
+    color: #000;
+    text-decoration: none;
+}
+.news .newsHeader .rightLink:hover {
+    transition: 0.3s all;
+    color: red;
+}
+.news .newsCatalog {
+    height: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.news .newsCatalog .card {
+    height: 700px;
+    width: 347px;
+    background-color: ghostWhite;
+    border: none;
+}
+.news .newsCatalog .card .cardImg {
+    height: 347px;
+    width: 347px;
+}
+.news .newsCatalog .card .cardLink {
+    height: auto;
+    width: 100%;
+    padding-right: 30px;
+    transform: translateY(-25px);
+    display: flex;
+    justify-content: end;
+}
+.news .newsCatalog .card .cardLink .cardRound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: none;
+    background-color: gainsboro;
+}
+.news .newsCatalog .card .cardLink .cardRound:hover {
+    transition: 0.3s all;
+    background-color: #ff0000;
+    color: #fff;
+}
+.news .newsCatalog .card .cardDate{
+    font-size: 20px;
+    font-weight: 500;
+    color: gray;
+}
+.news .newsCatalog .card .cardTitle {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+}
+.news .newsCatalog .card .cardTitle:hover {
+    transition: 0.3s all;
+    color: red;
+}
+.news .newsCatalog .card .cardText {
+    margin-top: 15px;
+}
+/* Home end */
+.info {
+    height: 500px;
+    width: 100%;
+}
+.info .infoItems {
+    height: 500px;
+    width: 100%;
+}
+.info .infoItems .infoTitle {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    padding-left: 30px;
+    background: url("../img/hands.png") left no-repeat;
+    margin-bottom: 25px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.info .infoItems .infoContent {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+.info .infoItems .infoContent .infoText {
+    height: 100%;
+    width: 100%;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+.info .infoItems .infoContent .infoText .infoLink {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.info .infoItems .infoContent .infoText .infoLink a {
+    text-decoration: none;
+    color: #000;
+}
+.info .infoItems .infoContent .infoText .infoLink a:hover {
+    transition: 0.3s all;
+    color: #ff0000;
+}
+.footer {
+    height: 200px;
+    width: 100%;
+    border-top: 1px solid gray;
+}
+.footer .footerItems {
+    height: 200px;
+    width: 100%;
+    padding: 30px 0;
+}
+.footer .footerItems .footerUp {
+    height: 50%;
+    width: 100%;
+    padding-right: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer .footerItems .footerUp .footerLogo {
+    height: auto;
+    width: 200px;
+}
+.footer .footerItems .footerUp .footerList {
+    list-style: none;
+}
+.footer .footerItems .footerUp .footerList li a {
+    color: #000;
+    text-decoration: none;
+}
+.footer .footerItems .footerUp .footerList li a:hover {
+    transition: 0.3s all;
+    color: red;
+}
+.footer .footerItems .footerUp .footerLinks {
+    height: auto;
+    width: auto;
+}
+.footer .footerItems .footerUp .footerLinks a img {
+    height: 35px;
+    width: 110px;
+}
+.footer .footerItems .footerDown {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.footer .footerItems .footerDown .footerSocial button{
+    height: 35px;
+    width: 45px;
+    border-radius: 15px;
+    border: 1px solid gray;
+    background-color: #fff;
+}
+.footer .footerItems .footerDown .footerSocial .facebook {
+    color: blue;
+}
+.footer .footerItems .footerDown .footerSocial .facebook:hover {
+    transition: 0.3s all;
+    border: 1px solid blue;
+}
+.footer .footerItems .footerDown .footerSocial .instagram {
+    color: purple;
+}
+.footer .footerItems .footerDown .footerSocial .instagram:hover {
+    transition: 0.3s all;
+    border: 1px solid purple;
+}
+.footer .footerItems .footerDown .footerSocial .youtube {
+    color: red;
+}
+.footer .footerItems .footerDown .footerSocial .youtube:hover {
+    transition: 0.3s all;
+    border: 1px solid red;
+}
+.footer .footerItems .footerDown .footerSocial .telegram {
+    color: skyblue;
+}
+.footer .footerItems .footerDown .footerSocial .telegram:hover {
+    transition: 0.3s all;
+    border: 1px solid skyblue;
+}
+.footer .footerText {
+    text-align: center;
+}
